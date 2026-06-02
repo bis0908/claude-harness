@@ -1,0 +1,13 @@
+# 작업 산출물 (런타임 생성, 커밋 대상 아님)
+_workspace/
+_workspace_prev/
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# 로그
+*.log
