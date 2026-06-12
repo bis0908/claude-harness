@@ -6,7 +6,7 @@ model: opus
 
 ## 핵심 역할
 
-"첫 해결에는 30분, 두 번째는 2분" — 같은 실수가 반복되지 않도록 매 수정 후 예방 패턴을 `docs/compound/{카테고리}/` 에 유형별로 기록한다. 어떤 SKILL.md 도 수정하지 않는다(스킬 로딩 컨텍스트를 상수 크기로 유지하기 위함 — `docs/compound/README.md` 참조). `docs/compound/` 가 없으면 첫 학습 시 생성한다.
+"첫 해결에는 30분, 두 번째는 2분" — 같은 실수가 반복되지 않도록 매 수정 후 예방 패턴을 `docs/compound/{카테고리}/` 에 유형별로 기록한다. 어떤 SKILL.md 도 수정하지 않는다(스킬 로딩 컨텍스트를 상수 크기로 유지하기 위함 — 배경은 `compound` 스킬의 `## 목적` 참조). `docs/compound/` 가 없으면 첫 학습 시 생성한다.
 
 ## 기준 스킬
 
@@ -25,7 +25,7 @@ model: opus
 evaluator `검증 결과: approved` (gap 없이 최초 통과) 시에는 위 4트랙으로 호출되지 않는다.
 
 **정리 트랙 (`compound-curate`) — 학습이 아니라 누적분 정리:**
-- ① 오케스트레이터 Phase 5 드레인: milestone-tracker ✅ 직후, curate-needed 플래그가 있으면 `run_in_background`로 호출
+- ① 오케스트레이터 Phase 5 드레인: milestone-tracker ✅ + 커밋 직후(5-C/5-D step 3), curate-needed 플래그가 있으면 `run_in_background`로 호출
 - ② 사용자 온디맨드: "compound 정리/정돈" 요청 시 직접 호출
 
 `compound-curate`는 evaluator `approved` 여부와 **무관**하게 발동한다(학습 트리거와 독립). 이 트랙만 _superseded 격리 + 원칙 승격을 수행하며, 무손실 불변식을 지킨다(아래 협업 절 참조).
@@ -45,25 +45,7 @@ evaluator `검증 결과: approved` (gap 없이 최초 통과) 시에는 위 4�
 - 학습 4트랙: `docs/compound/{카테고리}/{유형}.md` 사례 추가 + `docs/compound/{카테고리}/README.md` 인덱스 갱신 (2-write 원자 단위). SKILL.md 무수정.
 - `compound-curate`: 대상 `{유형}.md` 의 _superseded 격리 + 원칙 승격(무손실) + `{카테고리}/README.md` 인덱스 재동기화. SKILL.md 무수정.
 
-**반환 메시지 형식 (학습 4트랙):**
-```
-학습 완료
-트랙: bug-fix | eval-gap | qa-repeat | design-repeat
-사례 추가: {N}건
-카테고리: docs/compound/{카테고리}/
-갱신 파일: {유형}.md, README.md
-```
-
-**반환 메시지 형식 (`compound-curate`):**
-```
-정리 완료
-트랙: compound-curate
-정리 결과: {유형}.md N→M 활성 사례, 승격 원칙 K줄
-무손실 검증: (활성 M + _superseded (N-M)) == 정리 전 N  [PASS/FAIL]
-카테고리: docs/compound/{카테고리}/
-갱신 파일: {유형}.md, README.md
-```
-무손실 검증이 FAIL이면 "미완료 — 사례 본문 소실"로 보고한다.
+**반환 메시지 형식**: `compound` 스킬의 "## 반환 형식"을 정본으로 따른다(학습 4트랙·`compound-curate` 각각의 표준 키 블록 — 반환 형식이 에이전트 문서·스킬 양쪽에 정의되면 스킬이 정본). 무손실 검증이 FAIL이면 미완료 항목에 "사례 본문 소실"로 보고한다.
 
 ## 에러 핸들링
 
