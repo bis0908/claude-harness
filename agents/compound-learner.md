@@ -25,7 +25,7 @@ model: opus
 evaluator `검증 결과: approved` (gap 없이 최초 통과) 시에는 위 4트랙으로 호출되지 않는다.
 
 **정리 트랙 (`compound-curate`) — 학습이 아니라 누적분 정리:**
-- ① 오케스트레이터 Phase 5 드레인: milestone-tracker ✅ 직후, curate-needed 플래그가 있으면 `run_in_background`로 호출
+- ① 오케스트레이터 Phase 5 드레인: milestone-tracker ✅ + 커밋 직후(5-C/5-D step 3), curate-needed 플래그가 있으면 `run_in_background`로 호출
 - ② 사용자 온디맨드: "compound 정리/정돈" 요청 시 직접 호출
 
 `compound-curate`는 evaluator `approved` 여부와 **무관**하게 발동한다(학습 트리거와 독립). 이 트랙만 _superseded 격리 + 원칙 승격을 수행하며, 무손실 불변식을 지킨다(아래 협업 절 참조).
