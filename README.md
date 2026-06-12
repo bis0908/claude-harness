@@ -7,7 +7,7 @@ PHP→Next.js 포팅 프로젝트(`reviewnavi`)에서 검증된 에이전트 팀
 ```
 claude-harness/
 ├── .claude-plugin/          플러그인 매니페스트 (플러그인 설치 시 사용)
-│   ├── plugin.json          플러그인 메타데이터 (name: onemanshow)
+│   ├── plugin.json          플러그인 메타데이터 (name: oms)
 │   └── marketplace.json     단일 레포 마켓플레이스 (name: claude-harness)
 ├── agents/                  골격 에이전트 9종 (스택 무관, 자동 탐색 대상)
 │   ├── bug-fixer.md         단발성 버그 진단·수정
@@ -52,10 +52,10 @@ claude-harness/
 
 ```text
 /plugin marketplace add bis0908/claude-harness
-/plugin install onemanshow@claude-harness
+/plugin install oms@claude-harness
 ```
 
-설치 후 골격 에이전트·스킬은 `onemanshow:` 네임스페이스로 로드된다. 진입은 `/onemanshow:orchestrate <작업>` 으로 한다(스킬 설명의 트리거 문구로 자동 진입도 가능). 플러그인은 `/plugin` UI에서 프로젝트별로 켜고 끌 수 있다.
+설치 후 골격 에이전트·스킬은 `oms:` 네임스페이스로 로드된다. 진입은 `/oms:orchestrate <작업>` 으로 한다(스킬 설명의 트리거 문구로 자동 진입도 가능). 플러그인은 `/plugin` UI에서 프로젝트별로 켜고 끌 수 있다.
 
 > **로컬 검증.** 배포 전 `claude plugin validate .` 또는 `claude --plugin-dir .` 로 로드를 확인하라.
 

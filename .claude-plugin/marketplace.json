@@ -5,10 +5,10 @@
     "name": "Albert Kong",
     "email": "kamirof@gmail.com"
   },
-  "description": "onemanshow 에이전트 팀 하네스 플러그인 배포 마켓플레이스.",
+  "description": "oms 에이전트 팀 하네스 플러그인 배포 마켓플레이스.",
   "plugins": [
     {
-      "name": "onemanshow",
+      "name": "oms",
       "source": "./",
       "description": "스택 무관 에이전트 팀 하네스 — 골격 에이전트 9종·스킬 10종·orchestrate 오케스트레이터.",
       "version": "1.0.0",

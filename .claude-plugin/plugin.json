@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
-  "name": "onemanshow",
+  "name": "oms",
   "version": "1.0.0",
   "description": "스택 무관 에이전트 팀 하네스. 검증·학습·추적·조율 역할의 골격 에이전트 9종과 실행 스킬 10종, 마일스톤 단위로 팀을 조율하는 orchestrate 오케스트레이터를 제공한다.",
   "author": {
