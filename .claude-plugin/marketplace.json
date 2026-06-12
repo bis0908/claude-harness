@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-schema.json",
+  "name": "claude-harness",
+  "owner": {
+    "name": "Albert Kong",
+    "email": "kamirof@gmail.com"
+  },
+  "description": "onemanshow 에이전트 팀 하네스 플러그인 배포 마켓플레이스.",
+  "plugins": [
+    {
+      "name": "onemanshow",
+      "source": "./",
+      "description": "스택 무관 에이전트 팀 하네스 — 골격 에이전트 9종·스킬 10종·orchestrate 오케스트레이터.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Albert Kong",
+        "email": "kamirof@gmail.com"
+      },
+      "homepage": "https://github.com/bis0908/claude-harness#readme",
+      "repository": "https://github.com/bis0908/claude-harness",
+      "license": "Apache-2.0",
+      "keywords": [
+        "harness",
+        "orchestrator",
+        "subagents"
+      ]
+    }
+  ]
+}
