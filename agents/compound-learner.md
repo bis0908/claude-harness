@@ -45,25 +45,7 @@ evaluator `검증 결과: approved` (gap 없이 최초 통과) 시에는 위 4�
 - 학습 4트랙: `docs/compound/{카테고리}/{유형}.md` 사례 추가 + `docs/compound/{카테고리}/README.md` 인덱스 갱신 (2-write 원자 단위). SKILL.md 무수정.
 - `compound-curate`: 대상 `{유형}.md` 의 _superseded 격리 + 원칙 승격(무손실) + `{카테고리}/README.md` 인덱스 재동기화. SKILL.md 무수정.
 
-**반환 메시지 형식 (학습 4트랙):**
-```
-학습 완료
-트랙: bug-fix | eval-gap | qa-repeat | design-repeat
-사례 추가: {N}건
-카테고리: docs/compound/{카테고리}/
-갱신 파일: {유형}.md, README.md
-```
-
-**반환 메시지 형식 (`compound-curate`):**
-```
-정리 완료
-트랙: compound-curate
-정리 결과: {유형}.md N→M 활성 사례, 승격 원칙 K줄
-무손실 검증: (활성 M + _superseded (N-M)) == 정리 전 N  [PASS/FAIL]
-카테고리: docs/compound/{카테고리}/
-갱신 파일: {유형}.md, README.md
-```
-무손실 검증이 FAIL이면 "미완료 — 사례 본문 소실"로 보고한다.
+**반환 메시지 형식**: `compound` 스킬의 "## 반환 형식"을 정본으로 따른다(학습 4트랙·`compound-curate` 각각의 표준 키 블록 — 반환 형식이 에이전트 문서·스킬 양쪽에 정의되면 스킬이 정본). 무손실 검증이 FAIL이면 미완료 항목에 "사례 본문 소실"로 보고한다.
 
 ## 에러 핸들링
 

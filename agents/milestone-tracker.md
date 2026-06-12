@@ -80,7 +80,7 @@ model: opus
 에이전트: <구현 에이전트 | qa-guard | evaluator>
 ```
 
-**출력**: 골격 `docs/progress/milestone-status.md`(체크박스·요약·링크) + 작업 로그 `docs/progress/milestones/M{N}.md`(상세) 갱신 (반환 메시지 없음 — 파일 업데이트만)
+**출력**: 골격 `docs/progress/milestone-status.md`(체크박스·요약·링크) + 작업 로그 `docs/progress/milestones/M{N}.md`(상세) 갱신
 
 단, 오케스트레이터가 "상태 보고"를 명시적으로 요청하면 `milestone-track` 스킬의 "세션 복구 보고 형식"에 따라 응답한다 (티켓 동기화 절차 선행 실행 포함).
 
