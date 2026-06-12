@@ -5,7 +5,7 @@ description: 작업이 요구사항을 실제로 충족했는지 검증하는 �
 
 ## 재발 방지 학습 (작업 전 필독)
 
-이 영역의 과거 gap 사례는 `docs/compound/evaluation/README.md` 인덱스에 유형별로 정리돼 있다. 작업 시작 전 그 README를 읽고, 각 유형 파일 **첫 줄 load-when 술어**를 확인하여 현재 검증이 해당하는 사례 파일만 로드하라(전부 읽지 말 것). 사례를 이 SKILL.md에 누적하지 않는 이유는 스킬 로딩 컨텍스트를 상수 크기로 유지하기 위함이다 — compound-learner가 `docs/compound/`에만 기록한다(load-when 술어·인덱스 형식 규범은 `compound` 스킬의 `### Phase 2: docs/compound 작성` 참조).
+이 영역의 과거 gap 사례는 `docs/compound/evaluation/README.md` 인덱스에 유형별로 정리돼 있다(해당 경로가 없으면 아직 누적된 학습이 없는 것이므로 건너뛰고 진행한다). 경로가 있으면 작업 시작 전 그 README를 읽고, 각 유형 파일 **첫 줄 load-when 술어**를 확인하여 현재 검증이 해당하는 사례 파일만 로드하라(전부 읽지 말 것). 사례를 이 SKILL.md에 누적하지 않는 이유는 스킬 로딩 컨텍스트를 상수 크기로 유지하기 위함이다 — compound-learner가 `docs/compound/`에만 기록한다(load-when 술어·인덱스 형식 규범은 `compound` 스킬의 `### Phase 2: docs/compound 작성` 참조).
 
 ## 검증 원칙
 
