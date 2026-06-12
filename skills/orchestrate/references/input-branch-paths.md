@@ -8,7 +8,7 @@
 2. `Agent(compound-learner, 트랙: compound-curate, 대상: 요청에 명시된 카테고리/유형 목록 — 없으면 전 카테고리)` 를 직접 호출한다. Phase 5 드레인과 달리 사용자 응답이 필요하므로 `run_in_background` 없이 동기 호출한다.
 3. 반환된 정리 결과(각 `{유형}.md` N→M 활성, 승격 원칙 K줄, 무손실 검증 PASS/FAIL)를 사용자에게 요약 보고하고 종료한다.
 
-> 이유: 누적분 정리는 마일스톤 파이프라인과 무관한 유지보수 작업이다. evaluator `approved` 와 무관하게 발동하며, _superseded 격리/원칙 승격은 compound-learner의 `compound-curate` 트랙만 수행한다(무손실 불변식 — `docs/compound/README.md` 참조).
+> 이유: 누적분 정리는 마일스톤 파이프라인과 무관한 유지보수 작업이다. evaluator `approved` 와 무관하게 발동하며, _superseded 격리/원칙 승격은 compound-learner의 `compound-curate` 트랙만 수행한다(무손실 불변식 — `compound` 스킬 `### 정리 트랙` 절 참조).
 
 ## 계획 정합성 검증 요청 시 처리 경로
 

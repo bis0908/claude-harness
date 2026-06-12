@@ -5,7 +5,7 @@ description: reviewnavi PHP 레거시 코드를 체계적으로 분석하는 스
 
 ## 재발 방지 학습 (작업 전 필독)
 
-이 영역의 과거 분석 추출 누락 사례는 `docs/compound/legacy/README.md` 인덱스에 유형별로 정리돼 있다. 작업 시작 전 그 README를 읽고, 각 유형 파일 **첫 줄 load-when 술어**를 확인하여 현재 분석이 해당하는 사례 파일만 로드하라(전부 읽지 말 것). 사례를 이 SKILL.md에 누적하지 않는 이유는 스킬 로딩 컨텍스트를 상수 크기로 유지하기 위함이다 — compound-learner가 `docs/compound/`에만 기록한다(`docs/compound/README.md` 참조).
+이 영역의 과거 분석 추출 누락 사례는 `docs/compound/legacy/README.md` 인덱스에 유형별로 정리돼 있다. 작업 시작 전 그 README를 읽고, 각 유형 파일 **첫 줄 load-when 술어**를 확인하여 현재 분석이 해당하는 사례 파일만 로드하라(전부 읽지 말 것). 사례를 이 SKILL.md에 누적하지 않는 이유는 스킬 로딩 컨텍스트를 상수 크기로 유지하기 위함이다 — compound-learner가 `docs/compound/`에만 기록한다(load-when 술어·인덱스 형식 규범은 `compound` 스킬의 `### Phase 2: docs/compound 작성` 참조).
 
 ## 분석 진입점
 
