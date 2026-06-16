@@ -1,6 +1,6 @@
 ---
 name: nextjs-front-build
-description: reviewnavi Next.js App Router 프론트엔드 구현 스킬. JavaScript only, 컴포넌트 위치 규칙, shadcn 화이트리스트, Server Component 패턴을 강제한다. page-builder 에이전트가 사용한다.
+description: Next.js App Router 프론트엔드 구현 스킬. JavaScript only, 컴포넌트 위치 규칙, shadcn 화이트리스트, Server Component 패턴을 강제한다. page-builder 에이전트가 사용한다.
 ---
 
 ## 재발 방지 학습 (작업 전 필독)

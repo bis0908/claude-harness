@@ -1,6 +1,6 @@
 ---
 name: php-legacy-decode
-description: reviewnavi PHP 레거시 코드를 체계적으로 분석하는 스킬. PHP 파일에서 라우팅 구조, SQL 패턴, 세션 키, 외부 연동, 비즈니스 로직을 추출하고 Next.js 매핑 초안을 작성한다. legacy-reader 에이전트가 사용한다.
+description: 원본 PHP 레거시 코드를 체계적으로 분석하는 스킬. PHP 파일에서 라우팅 구조, SQL 패턴, 세션 키, 외부 연동, 비즈니스 로직을 추출하고 Next.js 매핑 초안을 작성한다. legacy-reader 에이전트가 사용한다.
 ---
 
 ## 재발 방지 학습 (작업 전 필독)
@@ -9,7 +9,7 @@ description: reviewnavi PHP 레거시 코드를 체계적으로 분석하는 스
 
 ## 분석 진입점
 
-reviewnavi PHP 코드베이스의 주요 파일부터 파악한다.
+원본 PHP 코드베이스의 주요 파일부터 파악한다.
 
 | 파일 | 역할 |
 |---|---|

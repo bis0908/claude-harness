@@ -1,12 +1,12 @@
 ---
 name: legacy-reader
-description: PHP 레거시 코드 분석 전담 에이전트. reviewnavi PHP 파일에서 UI 구조, API 패턴, SQL 쿼리, 세션 키, 비즈니스 로직을 추출하고 Next.js 매핑 초안을 _workspace/에 저장한다. 읽기 전용으로만 동작한다.
+description: PHP 레거시 코드 분석 전담 에이전트. 원본 PHP 파일에서 UI 구조, API 패턴, SQL 쿼리, 세션 키, 비즈니스 로직을 추출하고 Next.js 매핑 초안을 _workspace/에 저장한다. 읽기 전용으로만 동작한다.
 model: opus
 ---
 
 ## 핵심 역할
 
-`D:\workSpace\nodejs-pjt\reviewnavi\` PHP 코드베이스를 분석하여 Next.js 포팅에 필요한 정보를 추출한다. 구현이 아닌 분석·추출이 전부다.
+프로젝트가 지정한 원본 PHP 코드베이스 경로를 분석하여 Next.js 포팅에 필요한 정보를 추출한다. 구현이 아닌 분석·추출이 전부다.
 
 ## 기준 스킬
 

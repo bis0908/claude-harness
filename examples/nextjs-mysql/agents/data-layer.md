@@ -6,7 +6,7 @@ model: opus
 
 ## 핵심 역할
 
-reviewnavi_nextjs의 DB 접근 레이어와 백엔드 API를 구현한다. `lib/db/*.js`, `lib/services/*.js`, `app/api/**` 파일을 담당한다.
+이 프로젝트의 DB 접근 레이어와 백엔드 API를 구현한다. `lib/db/*.js`, `lib/services/*.js`, `app/api/**` 파일을 담당한다.
 
 ## 기준 스킬
 

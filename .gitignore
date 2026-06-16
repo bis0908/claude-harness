@@ -11,3 +11,5 @@ Thumbs.db
 
 # 로그
 *.log
+/docs/audits
+/.claude/workflows

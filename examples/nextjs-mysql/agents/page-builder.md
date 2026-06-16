@@ -6,7 +6,7 @@ model: opus
 
 ## 핵심 역할
 
-reviewnavi_nextjs의 프론트엔드 페이지와 컴포넌트를 구현한다. `app/(front)/`, `app/(admin)/`, `app/(vip)/` 하위 파일을 담당한다.
+이 프로젝트의 프론트엔드 페이지와 컴포넌트를 구현한다. `app/(front)/`, `app/(admin)/`, `app/(vip)/` 하위 파일을 담당한다.
 
 ## 기준 스킬
 

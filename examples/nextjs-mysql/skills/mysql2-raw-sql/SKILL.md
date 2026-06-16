@@ -1,6 +1,6 @@
 ---
 name: mysql2-raw-sql
-description: reviewnavi Next.js 포팅의 DB 접근 레이어 구현 스킬. mysql2/promise raw SQL, Repository 패턴, ? placeholder 강제, 식별자 화이트리스트를 적용한다. data-layer 에이전트가 사용한다.
+description: Next.js 포팅의 DB 접근 레이어 구현 스킬. mysql2/promise raw SQL, Repository 패턴, ? placeholder 강제, 식별자 화이트리스트를 적용한다. data-layer 에이전트가 사용한다.
 ---
 
 ## 재발 방지 학습 (작업 전 필독)
@@ -192,7 +192,7 @@ export async function applyToCampaign(campaignId, userId) {
 
 ## 테이블 범위
 
-- `__` prefix: reviewnavi 메인 테이블 (포팅 대상)
+- `__` prefix: 원본 메인 테이블 (포팅 대상)
 - `mail_` prefix: 발송기 테이블 (M12에서 처리)
 - `alza` 등 기타: 이번 포팅 범위 외 — 접근 금지
 
